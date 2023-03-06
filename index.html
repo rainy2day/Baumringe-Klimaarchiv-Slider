@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="#">
+  </head>
+  <body>
+    <header>
+      <label id="age-slider-label" for="age-slider">
+        <span>1864</span>
+        <span>2022</span>
+      </label>
+    </header>
+
+      <div id="p5-container"></div>
+
+
+<div id="column">
+  <br>
+      <h1><br>Klimaarchiv</h1> 
+      <p id="legende">
+         Temperaturen und Niederschläge <br> 
+         Jahresdurchschnitt 1864–2022 <br> 
+         Nordschweiz bis 1000müM<br><br>
+
+         <span class="info"></span>Um durch die Jahre zu navigieren:<br>
+         Slider ziehen oder Pfeiltasten  &larr; | &rarr; </span>
+         <br>
+         <section>
+          <!-- Hier werden Infos aus p5 eingeblendet -->
+          <p class="current-year-info">Jahr: <span style="font-weight: bold;" id="current-year"></span><br> 
+            Ø-Temperatur: <span style="font-weight: bold;" id="current-temperature"></span><br>
+            Ø-Niederschlag: <span style="font-weight: bold;" id="current-precipitation"></span></p>
+          <!-- Statt P wäre auch tr (tabelle) denkbar, statt span td, statt section table -->
+        </section>
+        <span style="color:rgb(0, 208, 255);">&#9608;</span> ≥ 6.0°C &nbsp; &nbsp;<br><br>
+        <span style="color:rgba(217, 49, 246, 0.899);">&#9608;</span> Mittelwert 8.1°C &nbsp; &nbsp;<br><br> 
+        <span style="color:red;">&#9608;</span> ≤ 10.99°C <br><br>
+        <span class="info">Quelle: MeteoSchweiz, Open Data</span> 
+        
+    </p>
+  </div>
+
+
+
+  <!-- p5 fügt ein «main» Elemente mit canvas als child ein. -->
+
+    <script src="sketch.js"  async></script>
+    <script src="libraries/p5.min.js"></script>
+  </body>
+</html>
